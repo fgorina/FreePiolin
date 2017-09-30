@@ -1,6 +1,6 @@
-# Free Piolin - On votar a Allò 2017
+# Free Piolin - On son les curses Allò 2017
 
-Aquesta aplicaciò permet consultar el cens disponible a una adreça web sempre que la base de dades segueixi l'estructura de la que s'ha fet servir per **Allò 2017**.
+Aquesta aplicaciò permet consultar si estem inscrits a les curses   **Allò 2017** i a on hem d'anar a recollir el dorsal i tenim la sortida.
 
 Per compilar-la es necessita incorporar **CryptoSwift** amb CocoaPods.
 
