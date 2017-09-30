@@ -29,6 +29,7 @@
 		0045F0471F7D074900A070A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00BA29761F7E5BC900446847 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		00BA29781F7E635400446847 /* String+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Hex.swift"; sourceTree = "<group>"; };
+		00DB7C6A1F7FB52C0029C5DF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		37E815B8B0990884FE3B7143 /* Pods-onvotar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onvotar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-onvotar/Pods-onvotar.debug.xcconfig"; sourceTree = "<group>"; };
 		42A9BA6D8B4876882C3D10AC /* Pods-onvotar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-onvotar.release.xcconfig"; path = "Pods/Target Support Files/Pods-onvotar/Pods-onvotar.release.xcconfig"; sourceTree = "<group>"; };
 		A194A847515036BA286A19AE /* Pods_onvotar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onvotar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +50,7 @@
 		0045F02F1F7D074900A070A4 = {
 			isa = PBXGroup;
 			children = (
+				00DB7C6A1F7FB52C0029C5DF /* README.md */,
 				0045F03A1F7D074900A070A4 /* onvotar */,
 				0045F0391F7D074900A070A4 /* Products */,
 				28B768D296C5A0F5587FD1FE /* Pods */,

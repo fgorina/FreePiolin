@@ -145,7 +145,7 @@ class ViewController: UIViewController {
     }
     
     
-    func doHashBucle(dat : Data, count: Int) -> Data{
+    func doHashBucle(dat : Data, count: Int) -> Data{  
         var hashed = dat
         
         for _ in 0..<count{
