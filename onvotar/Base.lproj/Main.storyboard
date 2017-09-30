@@ -81,7 +81,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="El votre col·legi electoral" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="epw-D4-fUK">
-                                <rect key="frame" x="16" y="332" width="343" height="315"/>
+                                <rect key="frame" x="16" y="332" width="343" height="235"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -92,7 +92,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Syu-OH-tKn">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0000" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Syu-OH-tKn">
                                 <rect key="frame" x="284" y="196" width="75" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="wSJ-7s-f5z"/>
@@ -108,6 +108,13 @@
                                     <segue destination="cHM-CQ-tOE" kind="show" id="ltP-S7-FGm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa5-VW-T6G">
+                                <rect key="frame" x="168.5" y="617" width="38" height="30"/>
+                                <state key="normal" title="Mapa"/>
+                                <connections>
+                                    <action selector="goToMap" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="kRC-YJ-msq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -121,15 +128,17 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ipl-8E-cj9" secondAttribute="trailing" constant="20" symbolic="YES" id="1wC-Qb-vKp"/>
                             <constraint firstItem="AgS-tc-z6Q" firstAttribute="centerY" secondItem="Ux9-uA-c4Q" secondAttribute="centerY" id="BjQ-uW-yyu"/>
                             <constraint firstItem="epw-D4-fUK" firstAttribute="top" secondItem="mST-P9-vof" secondAttribute="bottom" constant="17" id="E8S-l8-AJ5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="epw-D4-fUK" secondAttribute="bottom" constant="20" id="EQq-fI-UJ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="epw-D4-fUK" secondAttribute="bottom" constant="100" id="EQq-fI-UJ6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="epw-D4-fUK" secondAttribute="trailing" constant="16" id="FhX-Zk-d8X"/>
                             <constraint firstItem="Tix-V8-TKI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HNq-cd-8mG"/>
                             <constraint firstItem="mST-P9-vof" firstAttribute="top" secondItem="iQn-D3-rC9" secondAttribute="bottom" constant="20" id="Kxg-R0-tP8"/>
+                            <constraint firstItem="Aa5-VW-T6G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MIB-vt-e4J"/>
                             <constraint firstItem="Tix-V8-TKI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="aQR-nB-Sdv"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lD8-eY-yjW" secondAttribute="trailing" constant="20" symbolic="YES" id="aUt-Ds-Gu8"/>
                             <constraint firstItem="iQn-D3-rC9" firstAttribute="leading" secondItem="Gzu-8g-mQE" secondAttribute="leading" id="b0I-Yg-t17"/>
                             <constraint firstItem="iQn-D3-rC9" firstAttribute="centerY" secondItem="Ipl-8E-cj9" secondAttribute="centerY" id="gAj-Sc-ErP"/>
                             <constraint firstItem="Bj9-2A-2a4" firstAttribute="leading" secondItem="AgS-tc-z6Q" secondAttribute="trailing" constant="8" id="gsD-lX-zhn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Aa5-VW-T6G" secondAttribute="bottom" constant="20" id="jXG-DK-g08"/>
                             <constraint firstItem="lD8-eY-yjW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="97" id="lVW-CI-bTL"/>
                             <constraint firstItem="mST-P9-vof" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pgM-gP-qfD"/>
                             <constraint firstItem="Syu-OH-tKn" firstAttribute="centerY" secondItem="Ux9-uA-c4Q" secondAttribute="centerY" id="pgr-JL-QTw"/>
@@ -153,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="33"/>
+            <point key="canvasLocation" x="784.79999999999995" y="32.833583208395808"/>
         </scene>
         <!--Loader View Controller-->
         <scene sceneID="XLe-P9-xxD">

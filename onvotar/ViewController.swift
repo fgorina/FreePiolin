@@ -9,6 +9,7 @@
 import UIKit
 import Security
 import CryptoSwift
+import CoreLocation
 
 class ViewController: UIViewController {
     
@@ -21,6 +22,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var fResult: UITextView!
     
+    var carrer = ""
+    var poblacio = ""
+    
     let baseUrl : URL = URL(string: "https://ipfs.io/ipns/QmZxWEBJBVkGDGaKdYPQUXX4KC5TCWbvuR4iYZrTML8XCR/db.20170926")!
     
     override func viewDidLoad() {
@@ -32,7 +36,34 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func goToMap(){
+        
+        let geocoder = CLGeocoder()
+        let str = carrer + " " + poblacio
+        geocoder.geocodeAddressString(str) { (placemarksOptional, error) -> Void in
+            if let placemarks = placemarksOptional {
+                print("placemark| \(placemarks.first)")
+                if let location = placemarks.first?.location {
+                    let query = "?daddr=\(location.coordinate.latitude),\(location.coordinate.longitude)"
+                    let path = "http://maps.apple.com/" + query
+                    if let url = URL(string: path) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: { (done:Bool) in
+                            if !done{
+                                NSLog("Not done")
+                            }
+                        })
+                    } else {
+                        // Could not construct url. Handle error.
+                    }
+                } else {
+                    // Could not get a location from the geocode request. Handle error.
+                }
+            } else {
+                // Didn't get any placemarks. Handle error.
+            }
+        }
+        
+    }
     @IBAction func cercar(){
         
         var dni : String = ""
@@ -196,8 +227,8 @@ class ViewController: UIViewController {
             if let clearstr = String(data:cleardata, encoding:.utf8){
                 let resposta = clearstr.split(separator: "#")
                 let colegi = resposta[0]
-                let carrer = resposta[1]
-                let poblacio = resposta[2]
+                carrer = String(resposta[1])
+                poblacio = String(resposta[2])
                 let districte = resposta[3]
                 let seccio = resposta[4]
                 let mesa = resposta[5]
