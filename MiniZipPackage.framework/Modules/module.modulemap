@@ -1,0 +1,11 @@
+framework module MiniZipPackage {
+  umbrella header "MiniZipPackage.h"
+
+  export *
+  module * { export * }
+}
+
+module MiniZipPackage.Swift {
+    header "MiniZipPackage-Swift.h"
+    requires objc
+}
