@@ -24,7 +24,7 @@ end
 ```
 Es important doncs l'aplicaciò fa servir CryptoSwift per calcular SHA256 i l'encripciò AES.
 
-La aplicaicò es molt senzilla i no incorpora en local les dades però es poden carregar fent un tap a la i que hi ha a la primera pantalla.
+La aplicació es molt senzilla i no incorpora en local les dades però es poden carregar fent un tap a la i que hi ha a la primera pantalla.
 
 En general primer intentarà anar a un URL remot i si no pot fara servir el local.
 
