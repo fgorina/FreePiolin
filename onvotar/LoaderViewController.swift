@@ -4,6 +4,7 @@
 //
 //  Created by Francisco Gorina Vanrell on 30/9/17.
 //  Copyright © 2017 Francisco Gorina. All rights reserved.
+//  Modified in Textastic
 //
 
 import UIKit
